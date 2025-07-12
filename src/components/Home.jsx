@@ -29,7 +29,7 @@ function Home() {
         <NavBar />
          {/* =========================== HERO SECTION =========================== */}
         <section id='hero' className='hero w-[90%] lg:w-[90%] lg:h-[100vh] mt-10 mx-auto'>
-          <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" className='hero-text flex flex-wrap gap-2 w-full lg:w-[80%] lg:h-[60%]'>
+          <div data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-once="true" className='hero-text flex flex-wrap gap-2 w-full lg:w-[80%] lg:h-[60%]'>
             <h1 className='text-[40px] lg:self-end md:text-[60px]  font-semibold font-[oswald] lg:text-[80px]'>Hello, I'm Tarilate</h1><span className='flex lg:self-end flex-wrap gap-2 items-center text-[40px] md:text-[50px]  font-semibold font-[oswald] lg:text-[80px]'><img src={bitmoji1} alt="" className='w-[60px] lg:w-[100px]' /> <p>Namikpoh,</p></span><h1 className='text-[40px] text-[#B0B0B0] md:text-[50px] lg:text-[80px] font-semibold font-[oswald]'>a software engineer based in Lagos, Nigeria.</h1>
           </div>
           {/* =========================== SOCIALS SECTION =========================== */}
