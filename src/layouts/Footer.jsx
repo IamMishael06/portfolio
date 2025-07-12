@@ -58,7 +58,7 @@ function Footer(props) {
                     
                   </div>
         </div>
-        <span className='flex items-center text-center justify-center lg:mt-0 mt-10 text-[18px] font-[raleway] '><BiCopyright /> 2024  <a href="https://www.behance.net/trustbello" className='underline'> Trust</a>. All rights reserved.</span>
+        <span className='flex items-center text-center justify-center lg:mt-0 mt-10 text-[18px] font-[raleway] '><BiCopyright /> 2024  <a href="https://www.behance.net/trustbello" className='underline'> Trust</a>. All design rights reserved.</span>
    
         </div>
         
