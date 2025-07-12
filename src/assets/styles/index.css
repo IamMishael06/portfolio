@@ -1,0 +1,191 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+.logo{
+    font-family: 'Oswald';
+
+}
+.items ul li{
+    font-family: 'Oswald';
+    font-size: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    
+}
+.items-box li:hover{
+    color: #036AE3;
+    transition: 0.3s;
+}
+.body{
+    background: url('../images/NOISE.png');
+    background-size:contain;
+    z-index:90;
+    position: relative;
+    background-repeat: repeat;
+
+}
+
+.project-box::before{
+    content: "MarsFood is an e-commerce web app that let's users easily order food online and makee secure payment in just a few clicks.";
+    position: absolute;
+    font-family: 'raleway';
+    font-weight: bold;
+    transition: 0.9s;
+    width: 100%;
+    overflow: hidden;
+    padding: 20px;
+    border-radius:8px ;
+    text-align: center;
+    display: flex; 
+    align-items: center;
+    height: 100%;
+    color: rgba(255, 255, 255, 0.861);
+    background: rgba(0, 0, 0, 0.334);
+}
+.project-img::before{
+  
+}
+.selected-work, .services{
+  background: url('../images/NOISE.png');
+    background-size:contain;
+    z-index:90;
+    position: relative;
+    background-repeat: repeat;
+    background-color: #d1d1d1;
+}
+@media (width >= 768px) {
+    .project-box::before{
+        display: none;
+    }
+}
+@media (width >= 900px) {
+
+nav{
+    background: url('../images/NOISE.png');
+    background-size:contain;
+    z-index:20;
+    position: relative;
+    background-repeat: repeat;
+
+}
+
+
+
+.pop-in-img, .pop-in-div {
+  transition: width 0.4s, height 0.4s, transform 0.4s;
+  width: 0px;
+  height: 0px;
+  transform: translate(-50%, -50%);
+  position: absolute; /* Important */
+  top: 50%;
+  left:35%;
+  transform-origin: center;
+}
+
+.project:hover .pop-in-img,
+.project:hover .pop-in-div {
+  width: 250px;
+  height: 250px;
+  transform: translate(-35%, -50%);
+}
+.selected-work, .services{
+    background-color: #d1d1d15e;
+}
+
+
+}
+
+.footer-contact-details a{
+    color: #fff;
+    font-family: 'Oswald';
+    font-size: 22px;
+}
+@keyframes marquee-left-right {
+  0%{
+    right: 0px;
+  }
+
+  100% {
+    right:550px;
+  }
+}
+
+/* Bottom marquee animation (opposite direction) */
+@keyframes marquee-right-left {
+  0%{
+    right: 0px;
+  }
+
+  100% {
+    right:550px;
+  }
+}
+
+@media (min-width :1124px){
+.project-boxes{
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+.project-boxes > div:nth-of-type(1){
+  grid-column: 1 /span 4;
+}
+.project-boxes > div:nth-of-type(2){
+  grid-column: 1 /span 2;
+}
+.project-boxes > div:nth-of-type(3){
+  grid-column: 3 /span 2;
+}
+.project-boxes > div:nth-of-type(4){
+  grid-column: 1 /span 2;
+}
+.project-boxes > div:nth-of-type(5){
+  grid-column: 3 /span 2;
+}
+.project-boxes > div:nth-of-type(6){
+  grid-column: 1 /span 2;
+}
+}
+
+@media (min-width : 1024px) and (max-width: 1124px){
+.project-boxes{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.project-boxes > div{
+}
+.project-boxes > div:nth-of-type(1){
+  grid-column: 1 /span 4;
+}
+.project-boxes > div:nth-of-type(2){
+  grid-column: 1 /span 2;
+}
+.project-boxes > div:nth-of-type(3){
+  grid-column: 3 /span 2;
+  
+
+}
+.project-boxes > div:nth-of-type(4){
+  grid-column: 1 /span 2;
+}
+.project-boxes > div:nth-of-type(5){
+  grid-column: 3 /span 2;
+  height: 80vh;
+}
+.project-boxes > div:nth-of-type(6){
+  grid-column: 1 /span 3;
+  grid-row: 4 ;
+}
+}
+
+.first-marquee {
+  animation: marquee-left-right 3s ease-in-out alternate infinite;
+  transition: 0.3s;
+  animation-delay: 10s;
+}
+
+.second-marquee {
+  animation: marquee-right-left 3s ease-in-out alternate-reverse infinite;
+  animation-delay: 10s ;
+}

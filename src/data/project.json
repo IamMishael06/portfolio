@@ -1,0 +1,65 @@
+{"projects" : [
+    {
+        "project_name" : "MarsBank",
+        "details" : "Bank app: seamless Transactions for transfers, bill payment and loans",
+        "type" : "Web development",
+        "img" : "/assets/images/logo/marsbank.svg",
+        "year" : "2023",
+        "link" : "https://mars.tarinamikpoh.com.ng"
+    },
+    {
+        "project_name" : "MarsFood",
+        "details" : "MarsFood is an e-commerce web app that let's users easily order food online and makee secure payment in just a few clicks.",
+        "type" : "Web development",
+        "img" : "/assets/images/logo/marsfood.svg",
+        "year" : "2024",
+        "link" : "https://mars-food.onrender.com/"
+    }, 
+    {
+        "project_name" : "Lonaid Technology",
+        "details" : "An engaging LSM website for Lonaid technology, highlighting their innovativee tech solutions and enhacning user experience",
+        "type" :"Web development",
+        "img" : "/assets/images/logo/lonaid.svg",
+        "year" : "2024",
+        "link" : "https://loniadtechnology.com"
+    },
+    {
+        "project_name" : "Weather App",
+        "details" : "Integrating Api's, including weather Api, to create an app that displays global weather information. Experience it yourself!",
+        "type" :"Web development",
+        "img" : "/assets/images/logo/weather.png",
+        "year" : "2023",
+        "link" : "https://marsweatherapp.netlify.app"
+    },  
+    {
+        "project_name" : "Shopify Clone",
+        "details" : "A simple and clean design to test my UI skills. Sometimes, the simple things matter!",
+        "type" :"Web development",
+        "img" : "/assets/images/logo/shopify.svg",
+        "year" : "2024",
+        "link" : "http://shopify-hacathon.netlify.app"
+    },
+    {
+        "project_name" : "MarsHouse",
+        "details" : "A house predicting project. this model predicts the annual rent prices of houses in Nigeria. First of many ML works.",
+        "type" : "ML",
+        "year" : "2025",
+        "link" : "https://github.com/IamMishael06/marsHouse"
+
+    }
+],
+"career" : [
+    {
+        "company_name" : "Lonaid Technology",
+        "position" : "Full Stack Developer",
+        "duration" : "2023 → 2024",
+        "details" : "Developed and maintained web applications, focusing on user experience and performance optimization."
+    },
+    {
+        "company_name" : "Freelance",
+        "position" : "Web Developer",
+        "duration" : "2022 → 2023",
+        "details" : "Worked on various projects including e-commerce sites, personal blogs, and corporate websites."
+    }
+]
+}
