@@ -29,7 +29,9 @@ export default function NavBar() {
   return (
     
     <>
-    <nav className={`w-full h-[100vh] ${!hideNav ? `top-0 `: `top-[-100%]`} transition-[2s] md:top-0  bg-white fixed z-50 md:flex md:items-center md:relative md:justify-between md:mt-5 md:w-[90%] mx-auto md:h-[80px] border-t-2 border-b-2 pt-2 border-[#b0b0b0a9]` }>
+    <nav className={`w-full h-[100vh] transition-[2s] md:top-0  bg-white fixed z-50 md:flex md:items-center md:relative md:justify-between md:mt-5 md:w-[90%] mx-auto md:h-[80px] border-t-2 border-b-2 pt-2 border-[#b0b0b0a9]` }
+       style={{ top: hideNav ? '-150%' : '0' }}
+    >
       <div className='w-[90%] md:w-[15%] h-[10%] md:h-full mx-auto md:mx-0 mt-5 md:mt-0 flex items-center justify-between'>
         <h1 className='logo font-oswald font-bold text-[24px] text-[black] hover:text-[#036AE3] transition-[0.3s] cursor-pointer'><Link to={"/"}>Tarilate</Link></h1>
         <img src={xBar} alt="" onClick={()=> setHideNav(true)} className='md:hidden' />

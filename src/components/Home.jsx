@@ -64,7 +64,7 @@ function Home() {
         <section className='project mt-10 w-[90%] lg:h-[120vh] lg:[90%] mx-auto'>
           <div className='flex justify-between font-[raleway] lg:text-[24px] font-medium items-center'>
             <h2>Featured Project</h2>
-            <a href="#selected-work"><h2 className='flex gap-2 items-center '>Explore <span><img src={arrow} alt="" className='relative z-10' /></span></h2></a>
+            <a href="#selected-works"><h2 className='flex gap-2 items-center '>Explore <span><img src={arrow} alt="" className='relative z-10' /></span></h2></a>
            
           </div>
           <div className={`mt-10 w-[95%] lg:w-[90%] overflow-hidden lg:h-[80%]  h-[600px] relative  mx-auto`}>
@@ -87,7 +87,7 @@ function Home() {
           </div>
         </section>
         {/* =========================== SELECTED WORKS SECTION =========================== */}
-        <section id='selected-work' className='selected-work w-[90%] lg:w-[90%] mx-auto mt-10 h-auto py-5 bg-[#d1d1d1f9] relative z-10 rounded-xl'>
+        <section id="selected-works" className='selected-work w-[90%] lg:w-[90%] mx-auto mt-10 h-auto py-5 bg-[#d1d1d1f9] relative z-10 rounded-xl'>
           <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="80" >
               <h1 className='font-[raleway] font-normal text-[20px] p-5'>Selected works<span className='text-[#B0B0B0] text-[25px]'>*</span></h1>
            {/* =========================== INDIVIDUAL WORKS =========================== */}
