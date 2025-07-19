@@ -24,22 +24,6 @@
         "link" : "https://loniadtechnology.com"
     },
     {
-        "project_name" : "Weather App",
-        "details" : "Integrating Api's, including weather Api, to create an app that displays global weather information. Experience it yourself!",
-        "type" :"Web development",
-        "img" : "/assets/images/logo/weather.png",
-        "year" : "2023",
-        "link" : "https://marsweatherapp.netlify.app"
-    },  
-    {
-        "project_name" : "Shopify Clone",
-        "details" : "A simple and clean design to test my UI skills. Sometimes, the simple things matter!",
-        "type" :"Web development",
-        "img" : "/assets/images/logo/shopify.svg",
-        "year" : "2024",
-        "link" : "http://shopify-hacathon.netlify.app"
-    },
-    {
         "project_name" : "MarsHouse",
         "details" : "A house predicting project. this model predicts the annual rent prices of houses in Nigeria. First of many ML works.",
         "type" : "ML",
