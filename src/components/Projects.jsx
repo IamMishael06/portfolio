@@ -16,13 +16,13 @@ function Projects() {
         <NavBar />
         {/* =========================== HERO SECTION =========================== */}
         <section className="mt-10 w-[90%] mx-auto">
-          <span className="flex w-full flex-wrap font-[oswald] items-center font-semibold text-[35px] lg:text-[64px] sm:text-[45px] md:text-[55px] gap-2">
+          <span data-aos="fade-right" className="flex w-full flex-wrap font-[oswald] items-center font-semibold text-[35px] lg:text-[64px] sm:text-[45px] md:text-[55px] gap-2">
             <p className="flex items-center">Creative Highlights </p>
             <img src={bitmojidea} alt="" className="w-[20%] sm:w-[15%] lg:w-[10%]" />
             <p className="text-[#B0B0B0]">(2022-Present)</p>
           </span>
           <p className="mt-5 font-[oswald] text-[20px] md:text-[24px]  ">
-            Take a peak into my creative vaults
+            ... A peak into my works 
           </p>
         </section>
         {/* =========================== PROJECTS SECTION =========================== */}
@@ -30,16 +30,16 @@ function Projects() {
             {/* =========================== FILTER TAB SECTION =========================== */}
           <nav className="filter-tab flex flex-col lg:flex-row items-center justify-between w-full ">
             <div className="tab flex flex-wrap gap-2 items-center">
-              <button onClick={()=>setFilterDisplay("all")} className={` ${filterDisplay == "all" ? "border-[#036AE3] text-[#036AE3]" : "border-[#B0B0B0]" } py-2 hover:border-[#036AE3] hover:text-[#036AE3] transition-[0.2s] px-3 rounded-full border-1 font-[raleway] flex text-[18px]`}>
+              <button  data-aos="fade-right" data-aos-once="true" data-aos-duration="1000" data-aos-delay="800"  onClick={()=>setFilterDisplay("all")} className={` ${filterDisplay == "all" ? "border-[#036AE3] text-[#036AE3]" : "border-[#B0B0B0]" } py-2 hover:border-[#036AE3] hover:text-[#036AE3] transition-[0.2s] px-3 rounded-full border-1 font-[raleway] flex text-[18px]`}>
                 All<span className="w-[3%] text-[10px]">{projects.projects.length}</span>
               </button>
-              <button onClick={()=>setFilterDisplay("Web development")} className={` ${filterDisplay == "Web development" ? "border-[#036AE3] text-[#036AE3]" : "border-[#B0B0B0]" } py-2 flex hover:border-[#036AE3] hover:text-[#036AE3] transition-[0.2s] px-3 rounded-full border-1 font-[raleway] text-[18px]`}>
+              <button  data-aos="fade-right" data-aos-once="true" data-aos-duration="1400" data-aos-delay="600" onClick={()=>setFilterDisplay("Web development")} className={` ${filterDisplay == "Web development" ? "border-[#036AE3] text-[#036AE3]" : "border-[#B0B0B0]" } py-2 flex hover:border-[#036AE3] hover:text-[#036AE3] transition-[0.2s] px-3 rounded-full border-1 font-[raleway] text-[18px]`}>
                 Web Development <span className="w-[3%] text-[10px]">{ projects.projects.filter(project => project.type === "Web development").length}</span>
               </button>
-              <button onClick={()=>setFilterDisplay("ML")} className={` ${filterDisplay == "ML" ? "border-[#036AE3] text-[#036AE3]" : "border-[#B0B0B0]" } py-2 flex whitespace-nowrap hover:border-[#036AE3] hover:text-[#036AE3] transition-[0.2s] px-3 rounded-full border-1 font-[raleway] text-[18px]`}>
+              <button  data-aos="fade-right" data-aos-once="true" data-aos-duration="1600" data-aos-delay="400"  onClick={()=>setFilterDisplay("ML")} className={` ${filterDisplay == "ML" ? "border-[#036AE3] text-[#036AE3]" : "border-[#B0B0B0]" } py-2 flex whitespace-nowrap hover:border-[#036AE3] hover:text-[#036AE3] transition-[0.2s] px-3 rounded-full border-1 font-[raleway] text-[18px]`}>
                 Machine Learning<span className="w-[3%] text-[10px]">{ projects.projects.filter(project => project.type === "ML").length}</span>
               </button>
-              <button onClick={()=>setFilterDisplay("mobile")} className={` ${filterDisplay == "mobile" ? "border-[#036AE3] text-[#036AE3]" : "border-[#B0B0B0]" } py-2 flex whitespace-nowrap hover:border-[#036AE3] hover:text-[#036AE3] transition-[0.2s] px-3 rounded-full border-1 font-[raleway] text-[18px]`}>
+              <button  data-aos="fade-right" data-aos-once="true" data-aos-duration="1800" data-aos-delay="100" onClick={()=>setFilterDisplay("mobile")} className={` ${filterDisplay == "mobile" ? "border-[#036AE3] text-[#036AE3]" : "border-[#B0B0B0]" } py-2 flex whitespace-nowrap hover:border-[#036AE3] hover:text-[#036AE3] transition-[0.2s] px-3 rounded-full border-1 font-[raleway] text-[18px]`}>
                 Mobile Development<span className="w-[3%] text-[10px]">{ projects.projects.filter(project => project.type === "mobile").length}</span>
               </button>
             </div>
@@ -52,7 +52,7 @@ function Projects() {
            <div className={`mt-10  w-full h-auto gap-5 ${filterType == "grid" ? "grid " : "block mt-20"} project-boxes`}>
             {/* Map through your projects data here */}
             {projects.projects.map((project, index)=>(
-                <div key={index} className={`w-full h-[500px]  ${filterType == "list" ? "lg:h-auto border-t-1 border-[#B0B0B0] relative  group" : "lg:h-[100vh]"}  ${filterDisplay == project.type || filterDisplay == "all" ? "block" : "hidden"}`}>
+                <div key={index} className={`w-full h-[500px]  ${filterType == "list" ? "lg:h-auto border-t-1 border-[#B0B0B0] relative my-5  group" : "lg:h-[100vh]"}  ${filterDisplay == project.type || filterDisplay == "all" ? "block" : "hidden"}`}>
                   <a href={project.link}>
                      <img src={project.img} alt="" className={` projct-img ${filterType == "list" ? "w-[0px] h-[0px] transition-[width]  duration-[0.4s] translate-x-[-50%] translate-y-[-50%] absolute top-[50%] left-[30%] origin-center group-hover:w-[200px] group-hover:h-[200px] group-hover:translate-x-[-50%] group-hover:translate-y-[-50%] z-40" : "h-[70%] w-full"} rounded-2xl transition-[0.3s] object-cover `} />
                     <div className="project-details flex flex-wrap justify-between items-center gap-y-1 pb-5 mt-5">

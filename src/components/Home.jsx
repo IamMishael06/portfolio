@@ -67,11 +67,12 @@ function Home() {
             <a href="#selected-works"><h2 className='flex gap-2 items-center '>Explore <span><img src={arrow} alt="" className='relative z-10' /></span></h2></a>
            
           </div>
+          
           <div className={`mt-10 w-[95%] lg:w-[90%] overflow-hidden lg:h-[80%]  h-[600px] relative  mx-auto`}>
             <div  onClick={handleToggle} className={`project-box h-[80%] relative  mx-auto ${isToggled ? `before:top-0` : `before:top-[-100%]`} `}>
-              <img src={marsfood} className='w-full h-full object-cover rounded-3xl ' alt="" />
+              <img data-aos="zoom-in-up" data-aos-delay="150" data-aos-duration="8000"  src={marsfood} className='w-full h-full object-cover rounded-3xl ' alt="" />
             </div>
-            <div className='flex  w-full items-center mt-5 justify-between'>
+            <div  data-aos="zoom-in-down" data-aos-delay="150" data-aos-duration="8000" className='flex  w-full items-center mt-5 justify-between'>
               <h1 className='font-bold font-[raleway] text-[20px] md:text-[24px] lg:text-[26px]'>{data.projects[1].project_name}</h1>
               <p className='hidden lg:block font-[raleway] text-[20px] font-medium w-[50%] text-center'>MarsFood is an e-commerce web app that let's users easily order food online and makee secure payment in just a few clicks.</p>
               <p className='font-bold text-[#b0b0b0a9] font-[raleway] text-[20px] md:text-[24px] lg:text-[26px]'>2024</p>

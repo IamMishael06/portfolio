@@ -2,7 +2,7 @@ import xBar from '../assets/images/logo/menu-bar.png'
 import stroke from '../assets/images/logo/Vector.png'
 import openBar from  '../assets/images/logo/menu-bar-open.png'
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import resume from '../assets/docs/Resume.pdf'
 
 export default function NavBar() {
@@ -10,6 +10,15 @@ export default function NavBar() {
 
   const [hideNav, setHideNav] = useState(true)
   const [time, setTime] = useState("");
+  const location = useLocation();
+  const [focus, setFocus] = useState("home");
+
+  useEffect(() => {
+    if (location.pathname === "/about") setFocus("about");
+    else if (location.pathname === "/projects") setFocus("vault");
+    else if (location.pathname === "/contact") setFocus("chat");
+    else setFocus("home");
+  }, [location.pathname]);
 
   useEffect(() => {
     const updateTime = () => {
@@ -39,11 +48,11 @@ export default function NavBar() {
 
       <section className='items mt-[20%] md:flex md:items-center md:justify-between gap-5 md:mt-0 md:h-full w-[90%] md:w-[80%]  lg:w-[80%] h-[50%]  mx-auto md:mx-0'>
         <ul className='items-box flex md:flex-row flex-col md:w-[60%] lg:w-[70%] h-full justify-evenly items-end md:items-center'>
-          <Link to={"/about"}> <span className='flex gap-2 h-[18px]'><li>About ME</li><img src={stroke} className='h-full block md:hidden' alt="" /></span></Link>
+          <Link to={"/about"}> <span className='flex gap-2 h-[18px]'><li className={` ${focus == "about" ? "text-[#036AE3]" : "text-[black]" }`}>About ME</li><img src={stroke} className='h-full block md:hidden' alt="" /></span></Link>
            <img src={stroke} className='h-[20px] hidden md:block' alt="" />
-           <Link to={"/projects"}><span className='flex gap-2 h-[18px]'><li>Creative Vault</li><img src={stroke} className='h-full block md:hidden' alt="" /></span></Link>
+           <Link to={"/projects"}><span className='flex gap-2 h-[18px]'><li  className={` ${focus == "vault" ? "text-[#036AE3]" : "text-[black]" }`}>Creative Vault</li><img src={stroke} className='h-full block md:hidden' alt="" /></span></Link>
            <img src={stroke} className='h-[20px] hidden md:block' alt="" />
-           <Link to={"/contact"}><span className='flex gap-2 h-[18px]'><li>Lets Talk</li><img src={stroke} className='h-full block md:hidden' alt="" /></span></Link>
+           <Link to={"/contact"}><span className='flex gap-2 h-[18px]'><li  className={` ${focus == "chat" ? "text-[#036AE3]" : "text-[black]" }`}>Lets Talk</li><img src={stroke} className='h-full block md:hidden' alt="" /></span></Link>
           <span className='flex gap-2 h-[18px] md:hidden'> <a href={resume} download="Tarilate's Resume.pdf"><li>Resume</li></a></span>
         </ul>
         <ul className='ml-5 md:w-[35%] lg:w-[25%]  gap-5 md:flex items-center hidden'>

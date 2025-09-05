@@ -32,26 +32,26 @@ function Footer(props) {
         <hr className='border-t-2 border-[#b0b0b0a9] mt-2 lg:mt-1 w-full md:w-[90%]  mx-auto' />
           {/* =========================== FOOTER DIV SECTION =========================== */}
         <div className='w-[95%] lg:w-[90%] lg:mt-5 mx-auto flex flex-col lg:flex-row justify-between lg:items-center'>
-          <a href={`https://tarilate.onrender.com/#${props.name}`} className='mx-auto lg:mx-0 mt-5 lg:mt-0'><span className='flex items-center gap-2 cursor-pointer'><p className='font-semibold font-[raleway] lg:text-[24px]'>Back to Top</p><img src={upArrow} alt="" /></span></a>
+          <a href={`#${props.name}`} className='mx-auto lg:mx-0 mt-5 lg:mt-0'><span className='flex items-center gap-2 cursor-pointer'><p className='font-semibold font-[raleway] lg:text-[24px]'>Back to Top</p><img src={upArrow} alt="" /></span></a>
           <div className='socials  mt-8 lg:mt-0 mx-auto w-[80%] sm:w-[50%] md:w-[50%] lg:w-[20%]  flex gap-3 justify-between items-center'>
-            <div className='w-[50px] h-[50px] flex items-center justify-center rounded-full hover:border-[#036AE3] transition-[0.4s] border-1 border-[#b0b0b0a9]'>
+            <div className='w-[50px] h-[50px] flex items-center justify-center rounded-full hover:border-[#036AE3] transition-[0.3s] cursor-pointer border-1 border-[#b0b0b0a9]'>
                   <a href="https://github.com/IamMishael06">
                     <img src={git} alt="" className='' />
                   </a> 
                   </div>
-                  <div className='w-[50px] h-[50px] flex items-center justify-center hover:border-[#036AE3]   rounded-full border-1 border-[#b0b0b0a9]'>
+                  <div className='w-[50px] h-[50px] flex items-center justify-center hover:border-[#036AE3] transition-[0.3s] cursor-pointer    rounded-full border-1 border-[#b0b0b0a9]'>
                     <a href="https://www.linkedin.com/in/-tari-namikpoh/">
                       <img src={ig} alt="" />
                     </a>
                     
                   </div>
-                  <div className='w-[50px] h-[50px] flex items-center justify-center hover:border-[#036AE3]  rounded-full border-1 border-[#b0b0b0a9]'>
+                  <div className='w-[50px] h-[50px] flex items-center justify-center hover:border-[#036AE3] transition-[0.3s]  cursor-pointer  rounded-full border-1 border-[#b0b0b0a9]'>
                     <a href="https://www.instagram.com/mish_codes?igsh=YWliMHhya2Fpb3Vq&utm_source=qr">
                     <img src={lnkdn} alt="" />
                     </a>
                     
                   </div>
-                  <div className='w-[50px] h-[50px] flex items-center justify-center hover:border-[#036AE3]  rounded-full border-1 border-[#b0b0b0a9]'>
+                  <div className='w-[50px] h-[50px] flex items-center justify-center hover:border-[#036AE3] transition-[0.3s] cursor-pointer  rounded-full border-1 border-[#b0b0b0a9]'>
                     <a href="https://x.com/lil_xmich?s=21">
                       <img src={twitter} alt="" />
                     </a>
